@@ -1,0 +1,26 @@
+// базовые стили социальных иконок
+
+.social-networks {
+  padding: 0 24px 35px;
+  justify-content: space-between;
+}
+
+.social-networks .icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+
+.social-networks svg {
+  border-radius: 25px;
+  fill: $icon-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $inverse-color;
+    background-color: $accent-color;
+  }
+}

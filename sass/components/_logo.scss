@@ -1,0 +1,19 @@
+// базовые стили логотипа
+
+.logo {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  @include font-styles(700, 26px, 1.19);
+}
+
+.logo-blue {
+  color: $accent-color;
+}
+
+.logo-black {
+  color: $main-text-color;
+}
