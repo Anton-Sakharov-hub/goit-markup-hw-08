@@ -1,7 +1,7 @@
 // Утилитарные классы
 
 .ut-list {
-  display: flex;
+  // display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -16,19 +16,19 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 /* Утилитарный класс основный заголовков */
 .main-title {
-  width: 1200px;
+  // width: 1200px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
 
   color: $main-text-color;
   font-weight: 700;

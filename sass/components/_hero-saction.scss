@@ -3,9 +3,9 @@
 .hero-scn {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  // max-width: 1600px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -16,12 +16,25 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: $tablet) {
+    background-image: url(../images-web-studio/mobile-hero-bgi-optimized.jpg);
+    // max-width: $mobile;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $mobile) {
+    // width: $mobile;
+  }
 }
 
 // Стили заголовка секции Герой
 
 .hero-title {
-  width: 646px;
+  // width: 646px;
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;

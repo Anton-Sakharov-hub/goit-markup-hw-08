@@ -1,8 +1,8 @@
 // Стили блока рассылки подвала
 
-.mailling-cntr {
-  margin-left: 102px;
-}
+// .mailling-cntr {
+//   margin-left: 102px;
+// }
 
 .mailling-label {
   @include font-styles($font-weight: 400);
@@ -12,8 +12,8 @@
 }
 
 .mailling-form-wrap {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   margin-top: 10px;
 }
 
