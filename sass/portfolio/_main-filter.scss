@@ -1,15 +1,32 @@
 // Стили фильтров на сранице Портфолио
 
+.filter-list-wrap {
+  @media screen and (max-width: 767px) {
+    padding: 0 15px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
+
 .filter-list {
-  // justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
   // width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 56px;
+  // margin-right: auto;
+  // margin-left: auto;
+  // margin-bottom: 56px;
   cursor: pointer;
 
-  & > .item:not(:first-child) {
-    margin-left: 8px;
+  // & > .item:not(:first-child) {
+  //   margin-left: 8px;
+  // }
+  @media screen and (max-width: 767px) {
+    margin: 0 -8px;
+
+    & > .item {
+      margin: 15px 8px;
+    }
   }
 }
 
