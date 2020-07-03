@@ -1,9 +1,12 @@
 // базовые стили социальных иконок
 
 .social-networks {
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 24px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-networks .icon {

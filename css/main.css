@@ -243,21 +243,13 @@ img {
 .hero-scn {
   margin-left: auto;
   margin-right: auto;
+  padding: 118px 60px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images-web-studio/hero-bgi.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images-web-studio/hero-bgi.jpg);
   text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 768px) {
-  .hero-scn {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images-web-studio/mobile-hero-bgi-optimized.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images-web-studio/mobile-hero-bgi-optimized.jpg);
-    max-width: 480px;
-    padding: 118px 60px;
-  }
 }
 
 .hero-title {
@@ -301,7 +293,8 @@ img {
 .advantages {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (max-width: 767px) {
@@ -417,8 +410,6 @@ img {
 }
 
 .our-team-saction {
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f4fa;
@@ -454,18 +445,28 @@ img {
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (max-width: 767px) {
+  .team-cards-item {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .team-cards-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 .social-networks {
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-networks .icon {
@@ -564,6 +565,12 @@ img {
   background-color: #2f303a;
 }
 
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+
 .footer-container {
   margin-left: auto;
   margin-right: auto;
@@ -576,7 +583,7 @@ img {
 }
 
 .footer .logo {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -593,6 +600,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-call {
+    margin-bottom: 20px;
+  }
 }
 
 .social-networks li:not(:first-child) {
@@ -612,8 +625,17 @@ img {
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .footer .social-networks {
+    margin-bottom: 60px;
+    max-width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .footer-contacts {
-  margin: 0;
+  margin-bottom: 60px;
   font-style: normal;
 }
 
@@ -629,12 +651,12 @@ img {
 }
 
 .footer-address {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   color: #ffffff;
 }
 
 .footer-mail {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -652,13 +674,26 @@ img {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .mailling-label {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
 .mailling-form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 10px;
 }
 
 .mailling-form {
-  display: inline-block;
-  min-width: 310px;
+  display: block;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -668,6 +703,12 @@ img {
   color: #ffffff;
   background-color: #2f303a;
   outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mailling-form {
+    margin-bottom: 20px;
+  }
 }
 
 .mailling-form::-webkit-input-placeholder {
@@ -710,6 +751,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .mailling-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .icon-send {

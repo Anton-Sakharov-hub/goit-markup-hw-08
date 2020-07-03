@@ -1,7 +1,7 @@
 // Стили блока контактов подвала
 
 .footer-contacts {
-  margin: 0;
+  margin-bottom: 60px;
 
   font-style: normal;
 }
@@ -16,13 +16,13 @@
 }
 
 .footer-address {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   color: $inverse-color;
 }
 
 .footer-mail {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   color: $footer-text-color;
 }

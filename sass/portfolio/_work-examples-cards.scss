@@ -2,10 +2,10 @@
 
 .work-examples-list {
   flex-wrap: wrap;
-  width: 1200px;
+  // width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -38,7 +38,7 @@
   display: block;
 }
 
-// Анимирование описания карточек 
+// Анимирование описания карточек
 
 .content-img {
   .work-examples-card & {
@@ -100,7 +100,7 @@
   }
 }
 
-// Контент карточек 
+// Контент карточек
 
 .card-content {
   .work-examples-card & {
