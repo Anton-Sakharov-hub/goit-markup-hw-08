@@ -24,8 +24,8 @@
 
 .form {
   position: absolute;
-  // display: inline-flex;
-  // flex-direction: column;
+  display: inline-flex;
+  flex-direction: column;
   // width: 528px;
   padding: 40px;
   top: 10%;
@@ -51,6 +51,10 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.2);
     opacity: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
   }
 }
 
@@ -145,16 +149,16 @@
   color: $accent-color;
 }
 
-.checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0px;
-  padding: 0px;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+// .checkbox {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0px;
+//   padding: 0px;
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
 
 .checkbox-icon {
   margin-right: 8px;
@@ -174,7 +178,6 @@
   fill: $inverse-color;
   border: none;
 }
-
 
 // // стили закрывающей кнопки
 
