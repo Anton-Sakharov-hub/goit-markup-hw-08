@@ -3,8 +3,8 @@
 .our-team-saction {
   margin-right: auto;
   margin-left: auto;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: $secondary-bgc-color;
 }
@@ -26,7 +26,8 @@
 }
 
 .team-cards-item {
-  width: 270px;
+  max-width: 450px;
+  padding-bottom: 24px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   text-align: center;
@@ -36,6 +37,6 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-.team-cards-item + .team-cards-item {
-  margin-left: 30px;
+.team-cards-item:not(:last-child) {
+  margin-bottom: 30px;
 }

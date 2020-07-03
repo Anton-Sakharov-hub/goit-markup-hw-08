@@ -31,16 +31,16 @@
   // margin-right: auto;
 
   color: $main-text-color;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+
+  @include font-styles(700, 28px, 1.18);
 }
 
 .active-page::after {
   content: "";
   position: absolute;
+  left: 0;
   bottom: 0;
+  // transform: translateY(8px);
 
   display: block;
   background-color: $accent-color;

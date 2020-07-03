@@ -4,6 +4,9 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 94px;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
 }
 
 .advant-items-title {
@@ -16,20 +19,29 @@
   color: $secondary-text-color;
 }
 
-.advant-items > .item + .item {
-  margin-left: 30px;
-}
+// .advant-items > .item + .item {
+//   margin-left: 30px;
+// }
 
 .advant-items > .item::before {
   content: "";
   display: inline-flex;
   border-radius: 4px;
-  width: 278px;
-  height: 117px;
+  // width: 278px;
+  height: 120px;
 
   background-position: center;
+  background-image: cover;
   background-repeat: no-repeat;
   background-color: $secondary-bgc-color;
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 481px) {
+    width: 450px;
+  }
 }
 
 .advant-items {
