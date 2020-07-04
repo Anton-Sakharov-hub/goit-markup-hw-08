@@ -11,3 +11,8 @@
   line-height: $line-height;
   letter-spacing: $letter-spacing;
 }
+
+%margin-centred {
+  margin-left: auto;
+  margin-right: auto;
+}

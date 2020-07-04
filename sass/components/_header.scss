@@ -3,7 +3,7 @@
 .header {
   margin-left: auto;
   margin-right: auto;
-  // @media screen and (max-width: 767px) {
+  // @media screen and (max-width: $) {
   //   border-bottom: 1px solid #ececec;
   //   z-index: 100;
   // }
@@ -17,6 +17,13 @@
   // width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    min-width: $tablet;
+    max-width: $pre-desktop;
+  }
 }
 
 .header-underline {
@@ -24,24 +31,25 @@
 }
 
 .mobile-header {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $pre-tablet) {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ececec;
   }
+
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+  }
 }
 
 .icon-menu,
 .icon-cross {
   fill: $main-text-color;
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $pre-tablet) {
   .menu-button .icon-cross {
     display: none;
   }
@@ -63,8 +71,14 @@
   }
 }
 
+.menu-button {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .header-menu {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $pre-tablet) {
     position: absolute;
     left: 0;
     width: 100%;
@@ -73,5 +87,12 @@
     z-index: 10;
 
     background-color: $main-bgc-color;
+    // text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 81px;
+    width: 100%;
   }
 }

@@ -3,11 +3,18 @@
 .occupations {
   margin-left: auto;
   margin-right: auto;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: $pre-desktop) {
     display: none;
+  }
+}
+
+.occupations-list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    width: $desktop;
   }
 }
 

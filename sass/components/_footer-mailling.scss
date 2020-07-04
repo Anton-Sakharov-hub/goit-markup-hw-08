@@ -5,27 +5,45 @@
 // }
 
 .mailling-label {
-  @include font-styles($font-weight: 400);
+  display: inline-block;
+  margin-bottom: 20px;
+
+  @include font-styles($font-weight: 700);
   text-transform: uppercase;
 
-  color: #ffffff;
-
-  @media screen and (max-width: 767px) {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
+  color: $inverse-color;
 }
 
 .mailling-form-wrap {
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  margin-top: 10px;
+
+  @media screen and (min-width: $upper-mobile) and (max-width: $pre-desktop) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    width: 540px;
+  }
 }
 
 .mailling-form {
-  display: block;
-  // max-width: 450px;
+  @media screen and (max-width: $mobile) {
+    display: block;
+  }
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: inline-block;
+    width: 310px;
+  }
+
   height: 50px;
   padding: 15px 16px;
 
@@ -36,10 +54,6 @@
   color: $inverse-color;
   background-color: $footer-bgc-color;
   outline: none;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
-  }
 }
 
 .mailling-form {
@@ -53,9 +67,12 @@
 .mailling-button {
   display: flex;
   align-items: center;
-  margin-left: 12px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
+
+  @media screen and (max-width: $pre-desktop) {
     margin-left: auto;
     margin-right: auto;
   }

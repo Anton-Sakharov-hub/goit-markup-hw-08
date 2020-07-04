@@ -3,7 +3,20 @@
 .hero-scn {
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 60px;
+
+  @media screen and (max-width: $pre-tablet) {
+    padding: 118px 60px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    padding: 118px 204px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    padding: 200px 370px;
+  }
+
   // padding-top: 200px;
   // padding-bottom: 200px;
   // max-width: 1600px;
@@ -46,4 +59,8 @@
   color: $inverse-color;
   @include font-styles(900, 26px, 1.62, 0.06em);
   text-transform: uppercase;
+
+  @media screen and (min-width: $desktop) {
+    @include font-styles(900, 44px, 1.36, 0.06em);
+  }
 }

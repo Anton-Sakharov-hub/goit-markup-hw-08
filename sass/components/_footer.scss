@@ -3,25 +3,52 @@
 .footer {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 56px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: $footer-bgc-color;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $pre-desktop) {
     text-align: center;
   }
 }
 
 .footer-container {
-  // display: flex;
-  // justify-content: space-between;
-  // width: 1200px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: $desktop;
+  }
+
   margin-left: auto;
   margin-right: auto;
-  align-items: baseline;
-  padding-bottom: 28px;
-  padding-left: 15px;
-  padding-right: 15px;
+  // align-items: baseline;
+  // padding-bottom: 28px;
+  // padding-left: 15px;
+  // padding-right: 15px;
+}
+
+@media screen and (max-width: $pre-desktop) {
+  .footer-contacts-cntr {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-tablet-wrap {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    justify-content: space-evenly;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 540px;
+  }
 }
 
 .footer .logo {
@@ -35,6 +62,12 @@
 
 //  Стили блока социальные сети подвала
 
+@media screen and (max-width: $pre-tablet) {
+  .footer-call-container {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-call {
   display: inline-block;
   margin-bottom: 21px;
@@ -44,7 +77,7 @@
   @include font-styles($font-weight: 700);
   text-transform: uppercase;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $pre-tablet) {
     margin-bottom: 20px;
   }
 }
@@ -67,8 +100,7 @@
 .footer .social-networks {
   padding: 0;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
+  @media screen and (max-width: $pre-tablet) {
     max-width: 206px;
     margin-left: auto;
     margin-right: auto;
