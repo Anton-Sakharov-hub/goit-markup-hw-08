@@ -188,7 +188,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -246,6 +245,7 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
     z-index: 10;
+    border-top: 1px solid #ececec;
     background-color: #ffffff;
   }
 }
