@@ -219,6 +219,17 @@ img {
   .header-menu.is-open {
     display: block;
   }
+  .menu-button .icon-menu,
+  .icon-cross {
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-button:hover .icon-menu,
+  .menu-button:hover .icon-cross,
+  .menu-button:focus .icon-menu,
+  .menu-button:focus .icon-cross {
+    fill: #2196f3;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -390,6 +401,10 @@ img {
 .hero-scn {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 767px) {
@@ -410,10 +425,6 @@ img {
     padding: 200px 370px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images-web-studio/hero-bgi.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images-web-studio/hero-bgi.jpg);
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 
@@ -430,10 +441,6 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images-web-studio/mobile-hero-bgi-optimized.jpg);
     max-width: 576px;
     padding: 118px 60px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 
@@ -450,10 +457,6 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images-web-studio/archive/tablet-hero-bgi.jpg);
     max-width: 960px;
     padding: 118px 60px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 
@@ -461,19 +464,6 @@ img {
   .hero-scn {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../images-web-studio/archive/tablet-hero-bgi@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images-web-studio/archive/tablet-hero-bgi@2x.jpg);
-  }
-}
-
-.hero-scn .box {
-  width: 480px;
-  height: 320px;
-  background-image: url("photo.png");
-  background-size: 480px 320px;
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero-scn .box {
-    background-image: url("photo@2x.png");
   }
 }
 
@@ -1503,7 +1493,8 @@ img {
   border-radius: 50%;
 }
 
-.closing-button:hover svg {
+.closing-button:hover svg,
+.closing-button:focus svg {
   fill: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

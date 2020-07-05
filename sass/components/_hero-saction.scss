@@ -4,6 +4,11 @@
   margin-left: auto;
   margin-right: auto;
 
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   @media screen and (max-width: $pre-tablet) {
     padding: 118px 60px;
   }
@@ -16,19 +21,12 @@
     max-width: 1600px;
     padding: 200px 370px;
 
-    // padding-top: 200px;
-    // padding-bottom: 200px;
-    // max-width: 1600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
       url(../images-web-studio/hero-bgi.jpg);
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -50,10 +48,6 @@
       url(../images-web-studio/mobile-hero-bgi-optimized.jpg);
     max-width: 576px;
     padding: 118px 60px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -75,10 +69,6 @@
       url(../../images-web-studio/archive/tablet-hero-bgi.jpg);
     max-width: 960px;
     padding: 118px 60px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -88,21 +78,6 @@
           rgba(47, 48, 58, 0.8)
         ),
         url(../../images-web-studio/archive/tablet-hero-bgi@2x.jpg);
-    }
-  }
-
-  .box {
-    width: 480px;
-    height: 320px;
-    background-image: url("photo.png");
-    background-size: 480px 320px;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .box {
-      background-image: url("photo@2x.png");
     }
   }
 }
